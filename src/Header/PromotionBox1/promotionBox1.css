@@ -9,7 +9,7 @@
     display: none;
     animation: moveFromUp 1s forwards;
     animation-iteration-count: 1;
-    background-image: url(../img/_DSC0711.jpg);
+    background-image: url(./_DSC0711.jpg);
     background-size: 10%;
 }
 
