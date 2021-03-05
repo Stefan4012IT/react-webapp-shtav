@@ -1,0 +1,34 @@
+.promotion-box-1 {
+    position: absolute;
+    top: 0;
+    left: 70vw;
+    height: 50vh;
+    width: 300vw;
+    background-color: wheat;
+    display: none;
+    animation: moveFromUp 1s forwards;
+    animation-iteration-count: 1;
+    background-image: url(../Data/img/_DSC0711.JPG);
+    background-size: 10%;
+}
+
+@keyframes moveFromUp {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+        visibility: visible;
+      } 
+  }
+
+
+  @keyframes moveToUp {
+    0% {
+        height: 100%; 
+    }
+    100% {
+        height: 0;
+        visibility: hidden;
+      } 
+  }
