@@ -9,7 +9,7 @@
     display: none;
     animation: moveFromUp 1s forwards;
     animation-iteration-count: 1;
-    background-image: url(/react-webapp-shtav/static/media/_DSC0711.a91a0a72.jpg);
+    background-image: url(https://github.com/Stefan4012IT/react-webapp-shtav/blob/main/src/Header/Data/img/_DSC0711.jpg);
     background-size: 10%;
 }
 
