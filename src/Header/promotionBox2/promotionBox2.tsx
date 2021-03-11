@@ -5,6 +5,7 @@ import './promotionBox2.css';
 const promoBox2Representation = () => {
     return (
         <div className="promotion-box-2">
+            <div className="promo-img--2"></div>
         </div>
     )
 }

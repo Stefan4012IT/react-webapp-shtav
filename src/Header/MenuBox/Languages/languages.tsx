@@ -4,9 +4,9 @@ import './languages.css';
 
 const languagesRepresentation = () => {
     return (
-        <ul className="jezici">
-            <li className="jezici-li"><a href="#" className="jezici-links">SR</a></li>
-            <li className="jezici-li"><a href="#" className="jezici-links">EN</a></li>
+        <ul className="languages">
+            <li className="languages-li"><a href="#" className="languages-links">SR</a></li>
+            <li className="languages-li"><a href="#" className="languages-links">EN</a></li>
         </ul>
     )
 }

@@ -8,6 +8,7 @@
     display: none;
     animation: moveFromUp .8s forwards;
     animation-iteration-count: 1;
+    z-index: 100;
 }
 
 
@@ -29,4 +30,19 @@
         height: 0;
         visibility: hidden;
       } 
+  }
+
+  @media only screen and (max-width: 800px){
+    .menu-box {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #467999;
+        display: none;
+        animation: moveFromUp .8s forwards;
+        animation-iteration-count: 1;
+        z-index: 100;
+    }
   }

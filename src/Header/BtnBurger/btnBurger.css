@@ -10,6 +10,18 @@
     z-index: 1000;
 }
 
+.btn-ham-back-mobile {
+    position: relative;
+    width: 44px;
+    height: 28px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    z-index: 1000;  
+}
+
 .btn-ham-back:hover {
     cursor: pointer;
 }

@@ -1,16 +1,25 @@
 
-.jezici {
+.languages {
     position: absolute;
     right: 10%;
     top: 10%;
     color: #555;
 }
 
-.jezici-li {
+.languages-li {
     display: inline-block;
     margin: 5px;
 }
-.jezici-links:link, jezici-links:visited {
+.languages-links:link, languages-links:visited {
     color: #555;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 800px){
+    .languages {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+    }
 }

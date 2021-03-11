@@ -1,6 +1,35 @@
 .header {
     position: relative;
-    background-color:#fcf7ee;
+    background-color:#fff1d9;
     height: 100vh;
     width: 100vw;
+    
+}
+
+.img-frame {
+    position: absolute;
+    min-width: 65vw;
+    min-height: 100%;
+    left: 5vw;
+    z-index: 1;
+}
+
+.img {
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../Header/images/Logo-01-rszed.png');
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+@media only screen and (max-width: 480px){
+    .img{
+        background-image: url('../Header/images/Logo-01-rszed--MobSmall.png');
+    }
 }

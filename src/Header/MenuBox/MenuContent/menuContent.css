@@ -25,7 +25,7 @@
 
 
 
-.naslov {
+.name {
     font-weight: 500;
     color: #FFF;
     text-transform: uppercase;
@@ -55,4 +55,83 @@
     100% {
         font-size: 0px;
       } 
+  }
+
+  @keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+      } 
+  }
+
+  @keyframes liftUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+      } 
+  }
+
+
+
+  @media only screen and (max-width: 1366px){
+    .name {
+        font-size: 42px;
+    }
+
+    .menu-sections {
+        font-size: 36px;
+    }
+
+    @keyframes textUp {
+        0% {
+            font-size: 0;
+        }
+        100% {
+            font-size: 36px;
+          } 
+      }
+    
+      @keyframes textPu {
+        0% {
+            font-size: 36px;
+        }
+        100% {
+            font-size: 0px;
+          } 
+      }
+  }
+
+  @media only screen and (max-width: 800px){
+    .name {
+        font-size: 42px;
+    }
+    
+    .menu-sections {
+        width: max-content;
+        font-size: 32px;
+    }
+
+    @keyframes textUp {
+        0% {
+            font-size: 0;
+        }
+        100% {
+            font-size: 32px;
+          } 
+      }
+    
+      @keyframes textPu {
+        0% {
+            font-size: 32px;
+        }
+        100% {
+            font-size: 0px;
+          } 
+      }
   }
