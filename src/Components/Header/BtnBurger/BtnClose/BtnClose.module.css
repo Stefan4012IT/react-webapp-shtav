@@ -1,0 +1,46 @@
+
+
+.BtnBurgerBefore {
+    position: absolute;
+    background-color: #1d1d1d;
+    height: 3px;
+    width: 24px;
+    
+    animation: rotateBeforeLine .3s forwards;
+    z-index: 1;
+}
+
+.BtnBurgerAfter {
+    position: absolute;
+    background-color: #1d1d1d;
+    height: 3px;
+
+    
+    top: 50%;
+    bottom: 0;
+    animation: rotateAfterLine .3s forwards;
+    z-index: 1;
+}
+
+@keyframes rotateBeforeLine {
+    0%{
+        width: 24px;
+        top: 1.5px;
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(135deg);
+        top: 50%;
+    }
+}
+
+@keyframes rotateAfterLine {
+    0%{
+        width: 34px;
+        transform: rotate(0);
+    }
+    100%{
+        width: 24px;
+        transform: rotate(-135deg);
+    }
+}

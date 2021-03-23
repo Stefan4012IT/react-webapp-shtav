@@ -1,0 +1,92 @@
+.BtnBurger {
+    position: absolute;
+    background-color: #1d1b1b;
+    height: 3px;
+    width: 16px;
+    top: 50%;
+    z-index: 1;
+}
+
+.BtnBurgerBefore {
+    position: absolute;
+    background-color: #1d1d1d;
+    height: 3px;
+    width: 24px;
+    top: 1.5px;
+    z-index: 1;
+}
+
+.BtnBurgerAfter {
+    position: absolute;
+    background-color: #1d1d1d;
+    height: 3px;
+    width: 34px;
+    bottom: 0;
+    z-index: 1;
+}
+
+/**---------- ANIMATED BUTTONS-----------------------**/
+
+.BtnBurgerAnimated {
+    position: absolute;
+    background-color: #1d1b1b;
+    height: 3px;
+    width: 16px;
+    top: 50%;
+    z-index: 1;
+    animation: showBurgerLine .3s forwards;
+}
+
+.BtnBurgerBeforeAnimated {
+    position: absolute;
+    background-color: #1d1d1d;
+    height: 3px;
+    width: 24px;
+    top: 1.5px;
+    animation: rotateBeforeLine .3s forwards;
+    z-index: 1;
+}
+
+.BtnBurgerAfterAnimated {
+    position: absolute;
+    background-color: #1d1d1d;
+    height: 3px;
+    bottom: 0;
+    animation: rotateAfterLine .3s forwards;
+    z-index: 1;
+}
+
+
+@keyframes showBurgerLine {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        display: inline;
+    }
+}
+
+@keyframes rotateBeforeLine {
+    0%{
+        transform: rotate(135deg);
+        top: 50%;
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotateAfterLine {
+    0%{
+        top: 50%;
+        bottom: 0;
+        width: 24px;
+        transform: rotate(-135deg);
+    }
+    100%{
+        width: 34px;
+        transform: rotate(0deg);
+    }
+}

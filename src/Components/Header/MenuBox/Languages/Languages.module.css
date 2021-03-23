@@ -1,0 +1,54 @@
+.LangOpen {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    color: #555;
+    animation: liftUp .7s forwards;
+}
+
+.LangClose {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    color: #555;
+    animation: fadeOut .7s forwards;
+}
+
+.LangList {
+    display: inline-block;
+    margin: 5px;
+}
+.LangLink:link, .LangLink:visited {
+    color: #555;
+    text-decoration: none;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes liftUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 799px){
+    .LangOpen {
+        display: none;
+    }
+    .LangClose {
+        display: none;
+        visibility: hidden;
+    }
+}

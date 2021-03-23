@@ -1,0 +1,77 @@
+.PromotionBox1Open {
+    position: absolute;
+    top: 0;
+    left: 70vw;
+    height: 50vh;
+    width: 100%;
+    background-color: wheat;
+    z-index: 100;
+    animation: moveFromUp 1s forwards;
+}
+
+.PromotionBox1Close {
+    position: absolute;
+    top: 0;
+    left: 70vw;
+    height: 50vh;
+    width: 100%;
+    background-color: wheat;
+    z-index: 100;
+    animation: moveToUp 1s forwards;
+}
+
+.PromoImg1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../../assets/images/img2.jpg);
+    background: no-repeat center center cover;
+}
+
+@keyframes moveFromUp {
+    0%{
+        height: 0;
+        display: block;
+    }
+    100%{
+        height: 100%;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@keyframes moveToUp {
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1400px){
+    .PromoImg1 {
+        background-image: url(../../../../assets/images/img2--big.jpg);
+    }
+}
+
+@media (max-width: 1366px){
+    .PromoImg1 {
+        background-image: url(../../../../assets/images/img2--medium.jpg);
+    }
+}
+
+@media (max-width: 1200px){
+    .PromoImg1 {
+        background-image: url(../../../../assets/images/img2--small.jpg);
+    }
+}
+
+@media (max-width: 799px){
+    .PromotionBox1Open {
+        display: none;
+    }
+    .PromotionBox1Close {
+        display: none;
+    }
+}

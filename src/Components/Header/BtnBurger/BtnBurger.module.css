@@ -1,0 +1,21 @@
+.BtnPosition {
+    position: relative;
+    width: 44px;
+    height: 28px;
+    top: 7%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.BtnPosition:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .BtnPosition {
+        top: 50%;
+    }
+}

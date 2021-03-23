@@ -1,0 +1,44 @@
+.LangOpen {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    animation: liftUp .7s forwards;
+}
+
+.LangClose {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    animation: fadeOut .7s forwards;
+}
+
+.LangList {
+    display: inline-block;
+    margin: 5px;
+}
+.LangLink:link, .LangLink:visited {
+    color: #555;
+    text-decoration: none;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes liftUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        display: none;
+    }
+}

@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
-import Radium from 'radium';
-import Header from './Header/header';
-
+import Layout from './hoc/Layout/Layout';
 
 class App extends Component {
-
-
   render() {
     return (
       <div className="App">
-        <Header />
-
+        <Layout />
       </div>
     );
   }
 }
-export default Radium(App);
+
+export default App;

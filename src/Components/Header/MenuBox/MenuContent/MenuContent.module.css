@@ -1,0 +1,121 @@
+.MenuContent {
+    position: absolute;
+    background-color: transparent;
+    height: 50%;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.МenuContetLink {
+    color: #1d1b1b;
+    text-decoration: none;
+}
+
+
+.NameOpen {
+    font-weight: 500;
+    color: #FFF;
+    text-transform: uppercase;
+    animation: liftUp .7s forwards;
+    animation-iteration-count: 1;
+    padding-bottom: 20px;
+}
+
+.NameClose {
+    font-weight: 500;
+    color: #FFF;
+    text-transform: uppercase;
+    animation: fadeOut .7s forwards;
+    animation-iteration-count: 1;
+    padding-bottom: 20px;
+}
+
+.MenuSectionsOpen {
+    color: #1d1b1b;
+    font-weight: 500;
+    animation-iteration-count: 1;
+    animation: textUp .7s forwards;
+    animation-iteration-count: 1;
+    padding-bottom: 10px;
+}
+
+.MenuSectionsClose {
+    color: #1d1b1b;
+    font-weight: 500;
+    animation-iteration-count: 1;
+    animation: textPu .7s forwards;
+    animation-iteration-count: 1;
+    padding-bottom: 10px;
+}
+
+@keyframes textUp {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 48px;
+    }
+}
+
+@keyframes textPu {
+    0% {
+        font-size: 48px;
+    }
+    100% {
+        font-size: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes liftUp {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        display: none;
+    }
+}
+
+
+@media (max-width: 799px) { 
+    .MenuContent {
+        top: 30%;
+        font-size: 32px;
+        width: 80%;
+    }
+    @keyframes textUp {
+        0% {
+            font-size: 0;
+        }
+        100% {
+            font-size: 32px;
+        }
+    }
+    
+    @keyframes textPu {
+        0% {
+            font-size: 32px;
+        }
+        100% {
+            font-size: 0;
+        }
+    }
+}

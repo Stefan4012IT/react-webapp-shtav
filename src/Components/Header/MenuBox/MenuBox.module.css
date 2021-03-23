@@ -1,0 +1,62 @@
+.MenuBoxOpen {
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    width: 65vw;
+    height: 100vh;
+    background-color: #467999;
+    animation: moveFromUp .8s forwards;
+    animation-iteration-count: 1;
+    z-index: 100;
+}
+
+.MenuBoxClose {
+    position: absolute;
+    top: 0;
+    left: 5vw;
+    width: 65vw;
+    height: 100vh;
+    background-color: #467999;
+    animation: moveToUp .8s forwards;
+    animation-iteration-count: 1;
+    z-index: 100;
+}
+
+@keyframes moveFromUp {
+    0% {
+        height: 0;
+        display: block;
+    }
+    100% {
+        height: 100%;
+        visibility: visible;
+        display: block;
+    }
+}
+
+@keyframes moveToUp {
+    0% {
+        height: 100%;
+    }
+    100%{
+        height: 0;
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media (max-width: 799px) {
+    .MenuBoxOpen {
+        top: 10%;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .MenuBoxClose {
+        top: 10%;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+  }
