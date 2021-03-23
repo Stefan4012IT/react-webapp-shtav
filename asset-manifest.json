@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/react-webapp-shtav/static/css/main.ed67dc04.chunk.css",
+    "main.js": "/react-webapp-shtav/static/js/main.8d222bd8.chunk.js",
+    "main.js.map": "/react-webapp-shtav/static/js/main.8d222bd8.chunk.js.map",
+    "runtime-main.js": "/react-webapp-shtav/static/js/runtime-main.ee4ccf6a.js",
+    "runtime-main.js.map": "/react-webapp-shtav/static/js/runtime-main.ee4ccf6a.js.map",
+    "static/js/2.5b6ce8f8.chunk.js": "/react-webapp-shtav/static/js/2.5b6ce8f8.chunk.js",
+    "static/js/2.5b6ce8f8.chunk.js.map": "/react-webapp-shtav/static/js/2.5b6ce8f8.chunk.js.map",
+    "static/js/3.463a55af.chunk.js": "/react-webapp-shtav/static/js/3.463a55af.chunk.js",
+    "static/js/3.463a55af.chunk.js.map": "/react-webapp-shtav/static/js/3.463a55af.chunk.js.map",
+    "index.html": "/react-webapp-shtav/index.html",
+    "static/css/main.ed67dc04.chunk.css.map": "/react-webapp-shtav/static/css/main.ed67dc04.chunk.css.map",
+    "static/js/2.5b6ce8f8.chunk.js.LICENSE.txt": "/react-webapp-shtav/static/js/2.5b6ce8f8.chunk.js.LICENSE.txt",
+    "static/media/PromotionBox2.module.css": "/react-webapp-shtav/static/media/img1.6643c5b7.jpg",
+    "static/media/PromotionBox1.module.css": "/react-webapp-shtav/static/media/img2.7f552696.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee4ccf6a.js",
+    "static/js/2.5b6ce8f8.chunk.js",
+    "static/css/main.ed67dc04.chunk.css",
+    "static/js/main.8d222bd8.chunk.js"
+  ]
+}
